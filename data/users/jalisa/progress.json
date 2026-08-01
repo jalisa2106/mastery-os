@@ -8,6 +8,14 @@
       "xpAwarded": 40,
       "confidence": 3,
       "notes": ""
+    },
+    "node-d43224aae0": {
+      "status": "completed",
+      "completedAt": "2026-08-01T18:28:56.667Z",
+      "timeSpentMinutes": 35,
+      "xpAwarded": 40,
+      "confidence": 3,
+      "notes": ""
     }
   },
   "streak": {
@@ -16,9 +24,9 @@
     "lastActiveDate": "2026-08-01"
   },
   "xp": {
-    "total": 40,
+    "total": 80,
     "level": 1
   },
   "archived": [],
-  "lastUpdated": "2026-08-01T18:24:25.824Z"
+  "lastUpdated": "2026-08-01T18:28:56.667Z"
 }
