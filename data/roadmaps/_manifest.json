@@ -10,11 +10,11 @@
     },
     {
       "id": "webdev-8week",
-      "title": "8-Week Web Dev Roadmap",
+      "title": "12-Week Web Dev Roadmap",
       "file": "webdev-8week.json",
       "color": "#6366f1",
-      "durationWeeks": 8,
-      "totalNodes": 56
+      "durationWeeks": 12,
+      "totalNodes": 84
     }
   ]
 }

@@ -442,125 +442,173 @@ function parseWebDevRoadmap(_content: string): Roadmap {
     {
       num: 1, title: 'Week 1 — JS Fundamentals', track: 'JS Fundamentals',
       days: [
-        'Day 1: Array methods — write map, filter, reduce from scratch',
-        'Day 2: Destructuring + spread/rest — rewrite 5 functions',
-        'Day 3: Promises vs async/await — 3 different fetch approaches',
-        'Day 4: Closures — counter factory function + explanation',
-        'Day 5: this, arrow functions vs regular functions — 3 examples',
-        'Day 6: Review — redo Day 1 and Day 3 from memory',
+        'Day 1: Array methods — write map from scratch',
+        'Day 2: Array methods — write filter and reduce from scratch',
+        'Day 3: Destructuring + spread/rest — rewrite 5 functions',
+        'Day 4: Promises — fetch data using callbacks and .then() promises',
+        'Day 5: async/await — rewrite fetch using async/await with try/catch',
+        'Day 6: Review — redo Day 1 and Day 4 from memory',
         'Day 7: Rest / light review of anything shaky',
       ]
     },
     {
-      num: 2, title: 'Week 2 — React Core', track: 'React Core',
+      num: 2, title: 'Week 2 — Closures, context, and JS Review', track: 'JS Fundamentals',
       days: [
-        'Day 8: useState — build a counter + toggle component from blank',
-        'Day 9: useEffect — fetch data on mount, handle loading/error',
-        'Day 10: Props vs state — parent passing data + callback to child',
-        'Day 11: Lists and keys — todo list (add/remove) from scratch',
-        'Day 12: Forms — controlled form with 3 inputs + submit validation',
-        'Day 13: Component composition — refactor todo into 3 components',
-        'Day 14: Rebuild the todo list entirely from memory, timed',
+        'Day 8: Closures — write counter factory and explain out loud',
+        'Day 9: this context, arrow functions vs regular — 3 examples',
+        'Day 10: this context — practice binding and lexical scope exercises',
+        'Day 11: Review — redo Day 8 and Day 9 from memory',
+        'Day 12: JS fundamentals synthesis — build fetch cache with closures',
+        'Day 13: Checkpoint — JS fundamentals final self-assessment',
+        'Day 14: Rest / light review of JS concepts',
       ]
     },
     {
-      num: 3, title: 'Week 3 — Next.js Fundamentals', track: 'Next.js Fundamentals',
+      num: 3, title: 'Week 3 — React Core — State & Effects', track: 'React Core',
       days: [
-        'Day 15: File-based routing — create about and blog pages manually',
-        'Day 16: Dynamic routes — build blog/[slug]/page.tsx, log param',
-        'Day 17: Layouts — shared layout.tsx with nav across routes',
-        'Day 18: Server vs Client Components — write one of each, explain why',
-        'Day 19: Data fetching in Server Components — fetch public API',
-        'Day 20: Loading and error states — add loading.tsx and error.tsx',
-        'Day 21: Review — rebuild Day 16 + Day 19 from a blank folder',
+        'Day 15: useState — build counter + toggle from a blank file',
+        'Day 16: useState — state updates with complex objects and arrays',
+        'Day 17: useEffect — fetch data on mount, handle loading state',
+        'Day 18: useEffect — handle error states and component cleanups',
+        'Day 19: Props vs state — parent passing data + callback to child',
+        'Day 20: Review — rebuild Day 15 and Day 17 from memory',
+        'Day 21: Rest / light review of React state and effects',
       ]
     },
     {
-      num: 4, title: 'Week 4 — Next.js Data & Routes', track: 'Next.js Data & Routes',
+      num: 4, title: 'Week 4 — React Core — Lists, Forms, & Composition', track: 'React Core',
       days: [
-        'Day 22: Route handlers — GET handler returning mock data',
-        'Day 23: POST handler — accept body, validate it, return response',
-        'Day 24: Dynamic API routes — GET/DELETE for individual resource',
-        'Day 25: Connect page to your own API route in Server Component',
-        'Day 26: Client-side interactivity — delete button calling DELETE route',
-        'Day 27: Environment variables + .env.local in route handler',
-        'Day 28: Build tiny notes app end-to-end from scratch',
+        'Day 22: Lists and keys — build todo list from scratch',
+        'Day 23: Forms — controlled form with 3 inputs and submit validation',
+        'Day 24: Component composition — refactor todo list into 3 components',
+        'Day 25: Component composition — pass components as props',
+        'Day 26: Rebuild the todo list entirely from memory, timed',
+        'Day 27: Redo memory build — optimize renders and state layout',
+        'Day 28: Rest / light review of forms and component layout',
       ]
     },
     {
-      num: 5, title: 'Week 5 — NestJS Core', track: 'NestJS Core',
+      num: 5, title: 'Week 5 — Next.js Fundamentals (App Router)', track: 'Next.js Fundamentals',
       days: [
-        'Day 29: Install Nest CLI, trace main.ts → AppModule by hand',
-        'Day 30: Modules — create NotesModule manually (no CLI generator)',
-        'Day 31: Controllers — write NotesController with GET endpoint',
-        'Day 32: Providers/Services — NotesService, inject into controller',
-        'Day 33: Explain Dependency Injection out loud / in writing',
-        'Day 34: POST endpoint — add create method to service + controller',
-        'Day 35: Review — rebuild Notes module from blank files',
+        'Day 29: File-based routing — create about and blog pages manually',
+        'Day 30: Dynamic routes — build blog/[slug]/page.tsx, log param',
+        'Day 31: Layouts — shared layout.tsx with nav across routes',
+        'Day 32: Server vs Client Components — write one of each, explain why',
+        'Day 33: Data fetching in Server Components — fetch public API directly',
+        'Day 34: Loading and error states — add loading.tsx and error.tsx',
+        'Day 35: Rest / light review of Next.js routing',
       ]
     },
     {
-      num: 6, title: 'Week 6 — NestJS + Database', track: 'NestJS Advanced',
+      num: 6, title: 'Week 6 — Next.js Route Handlers & Data', track: 'Next.js Data & Routes',
       days: [
-        'Day 36: DTOs — CreateNoteDto with class-validator decorators',
-        'Day 37: Enable validation pipe globally, test bad input rejection',
-        'Day 38: Learn Prisma (or TypeORM) — Note model, run migration',
-        'Day 39: Wire NotesService to DB for GET (read all)',
-        'Day 40: Wire POST (create) to the database',
-        'Day 41: Add PATCH and DELETE endpoints backed by DB',
-        'Day 42: Rebuild full CRUD resource from scratch, timed',
+        'Day 36: Route handlers — GET handler returning mock data',
+        'Day 37: POST handler — accept body, validate it, return response',
+        'Day 38: Dynamic API routes — GET/DELETE for individual resource',
+        'Day 39: Connect page to API — fetch from app/api/notes in Server Component',
+        'Day 40: Client-side interactivity — delete button calling DELETE route',
+        'Day 41: Environment variables + .env.local in route handler',
+        'Day 42: Rest / light review of Next.js APIs',
       ]
     },
     {
-      num: 7, title: 'Week 7 — Integration', track: 'Integration',
+      num: 7, title: 'Week 7 — Next.js Review & NestJS Core', track: 'NestJS Core',
       days: [
-        'Day 43: Point Next.js fetch calls at NestJS API (CORS setup)',
-        'Day 44: Basic auth — simple login endpoint in Nest (no JWT yet)',
-        'Day 45: JWT — issue token on login, write auth service by hand',
-        'Day 46: Protect route with auth guard — write the guard yourself',
-        'Day 47: Frontend — store token, attach to authenticated requests',
-        'Day 48: Protected page — redirect unauthenticated users',
-        'Day 49: Review full auth flow end-to-end, explain without notes',
+        'Day 43: Notes App — build end-to-end notes app from scratch',
+        'Day 44: Rebuild the Notes app from memory, timed — no notes open',
+        'Day 45: Install Nest CLI, trace main.ts → AppModule by hand',
+        'Day 46: Modules — create NotesModule manually (no CLI generator)',
+        'Day 47: Controllers — write NotesController with GET endpoint',
+        'Day 48: Controllers — GET endpoint with path params in controller',
+        'Day 49: Rest / light review of Next.js to NestJS transition',
       ]
     },
     {
-      num: 8, title: 'Week 8 — Solo Build', track: 'Solo Build',
+      num: 8, title: 'Week 8 — NestJS Providers, DI, & Review', track: 'NestJS Core',
       days: [
-        'Day 50: Plan full-stack app — routes, data model, pages on paper',
-        'Day 51: Build NestJS backend: module + controller + service skeleton',
-        'Day 52: Backend: DB model + CRUD endpoints',
-        'Day 53: Backend: auth (login + protected routes)',
-        'Day 54: Frontend: pages + routing in Next.js',
-        'Day 55: Frontend: connect to backend, forms, list views',
-        'Day 56: Polish, fix bugs, final self-check — could you rebuild?',
+        'Day 50: Providers/Services — NotesService, inject into controller',
+        'Day 51: Dependency Injection — explain DI mechanism out loud/in writing',
+        'Day 52: POST endpoint — add create method to service + controller',
+        'Day 53: Review — rebuild Notes module from blank files',
+        'Day 54: Rebuild Notes module from memory — timed, no reference',
+        'Day 55: DTOs — create CreateNoteDto with class-validator decorators',
+        'Day 56: Rest / light review of NestJS dependency injection',
       ]
     },
+    {
+      num: 9, title: 'Week 9 — NestJS Validation & Database', track: 'NestJS Advanced',
+      days: [
+        'Day 57: Enable validation pipe globally, test bad input rejection',
+        'Day 58: Prisma setup — install Prisma, run prisma init',
+        'Day 59: Prisma schema — set up Note model, run migration',
+        'Day 60: Wire NotesService to DB for GET (read all)',
+        'Day 61: Wire POST (create) to the database',
+        'Day 62: Add PATCH and DELETE endpoints backed by DB',
+        'Day 63: Rest / light review of NestJS database integration',
+      ]
+    },
+    {
+      num: 10, title: 'Week 10 — NestJS CRUD Review & Integration', track: 'Integration',
+      days: [
+        'Day 64: Rebuild NestJS CRUD resource from scratch, timed',
+        'Day 65: Trace NestJS request lifecycle from controller to database',
+        'Day 66: Point Next.js fetch calls at NestJS API (CORS setup)',
+        'Day 67: CORS & error handling diagnostics on Next.js frontend',
+        'Day 68: Basic auth — simple login endpoint in Nest (email/password)',
+        'Day 69: JWT — issue token on login, write auth service by hand',
+        'Day 70: Rest / light review of Next.js and NestJS integration',
+      ]
+    },
+    {
+      num: 11, title: 'Week 11 — Auth guards, Protection & Integration', track: 'Integration',
+      days: [
+        'Day 71: Protect route with auth guard — write guard yourself',
+        'Day 72: Protect route with auth guard — test with expired tokens',
+        'Day 73: Frontend — store token, attach to authenticated requests',
+        'Day 74: Protected page — redirect unauthenticated users',
+        'Day 75: Review full auth flow end-to-end, explain without notes',
+        'Day 76: Rebuild auth endpoints and guard from memory',
+        'Day 77: Rest / light review of authentication mechanics',
+      ]
+    },
+    {
+      num: 12, title: 'Week 12 — Solo Build', track: 'Solo Build',
+      days: [
+        'Day 78: Plan full-stack app — routes, data model, pages on paper',
+        'Day 79: Build NestJS backend: module + controller + service skeleton',
+        'Day 80: Backend: DB model + CRUD endpoints',
+        'Day 81: Backend: auth (login + protected routes)',
+        'Day 82: Frontend: pages + routing in Next.js',
+        'Day 83: Frontend: connect to backend, forms, list views',
+        'Day 84: Polish, fix bugs, final self-check — could you rebuild?',
+      ]
+    }
   ];
 
   const phases: RoadmapPhase[] = [
-    { id: 'phase-1', title: 'Phase 1: Frontend Foundations (Weeks 1–4)', weeks: [] },
-    { id: 'phase-2', title: 'Phase 2: Backend + Integration (Weeks 5–8)', weeks: [] },
+    { id: 'phase-1', title: 'Phase 1: Frontend Foundations (Weeks 1–6)', weeks: [] },
+    { id: 'phase-2', title: 'Phase 2: Backend + Integration (Weeks 7–12)', weeks: [] },
   ];
 
   weekData.forEach((week) => {
     allTracks.add(week.track);
     const nodes: RoadmapNode[] = week.days.map((day, i) => {
-      const isReview = day.toLowerCase().includes('review') || day.toLowerCase().includes('rebuild');
+      const isReview = day.toLowerCase().includes('review') || day.toLowerCase().includes('rebuild') || day.toLowerCase().includes('checkpoint');
       return {
-        id: stableNodeId(roadmapId, week.num <= 4 ? 'Phase 1' : 'Phase 2', week.title, day),
+        id: stableNodeId(roadmapId, week.num <= 6 ? 'Phase 1' : 'Phase 2', week.title, day),
         title: day,
         track: week.track,
         type: isReview ? 'checkpoint' : 'task',
         estimatedMinutes: isReview ? 45 : 35,
         difficulty: i === 6 ? 'hard' : i > 3 ? 'medium' : 'easy',
-        dependencies: i > 0 ? [stableNodeId(roadmapId, week.num <= 4 ? 'Phase 1' : 'Phase 2', week.title, week.days[i - 1])] : [],
+        dependencies: i > 0 ? [stableNodeId(roadmapId, week.num <= 6 ? 'Phase 1' : 'Phase 2', week.title, week.days[i - 1])] : [],
         resources: [],
         checkpoint: isReview && i === 6,
         dayNumber: week.num * 7 - 6 + i,
       };
     });
 
-    const phaseIdx = week.num <= 4 ? 0 : 1;
+    const phaseIdx = week.num <= 6 ? 0 : 1;
     phases[phaseIdx].weeks.push({
       id: `week-${week.num}`,
       title: week.title,
@@ -574,11 +622,11 @@ function parseWebDevRoadmap(_content: string): Roadmap {
 
   return {
     id: roadmapId,
-    title: '8-Week Web Dev Roadmap',
-    description: 'Next.js + NestJS fundamentals — manual coding, no AI — 56 days',
+    title: '12-Week Web Dev Roadmap',
+    description: 'Next.js + NestJS fundamentals — manual coding, no AI — 84 days',
     sourceFile: 'web-dev-roadmap.md',
     parsedAt: new Date().toISOString(),
-    durationWeeks: 8,
+    durationWeeks: 12,
     color: '#6366f1',
     phases,
     tracks: Array.from(allTracks),
